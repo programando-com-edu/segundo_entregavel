@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequência de Fibonacci</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html,
+    body {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-200">
+  <div class="flex flex-col justify-center items-center  w-full h-full mx-auto p-4">
+
+    <h1 class="text-2xl font-bold mb-4">Sequência de Fibonacci</h1>
+    <div class="flex flex-row mb-4 items-center justify-center">
+      <label for="position" class="mr-2">Posição:</label>
+      <input type="number" id="position" class="border border-gray-400 p-2">
+      <button onclick="showFibonacciSequence()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded">
+        Exibir
+      </button>
+    </div>
+
+    <div id="fibonacci-sequence" class="flex items-center justify-center w-96 text-lg font-semibold"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
